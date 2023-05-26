@@ -1,0 +1,21 @@
+@import url("https://fonts.cdnfonts.com/css/thrapston");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.hand-font {
+  font-family: "Thrapston", sans-serif;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent   bg-gradient-to-r from-rose-600 to-purple-600;
+}
+
+.text-list-Items {
+  @apply px-2 py-1  border-2 text-gray-400 cursor-pointer hover:text-white  rounded-sm border-gray-900 transition-colors duration-700;
+}

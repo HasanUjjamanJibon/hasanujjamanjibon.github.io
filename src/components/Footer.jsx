@@ -33,7 +33,7 @@ const Footer = () => {
           Youtube
         </a>
       </div>
-      <div className="justify-center lg:justify-between flex flex-wrap items-center text-gray-500 text-xs py-3 gap-5 capitalize">
+      <div className="justify-center lg:justify-between flex flex-wrap items-center dark:text-gray-500 text-gray-800 text-xs py-3 gap-3 capitalize">
         <span>Design & development by Hasan Ujjaman Jibon</span>
         <span>&copy; 2023, all right reserved</span>
       </div>

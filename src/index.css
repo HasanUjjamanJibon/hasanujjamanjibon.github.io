@@ -17,5 +17,5 @@ body {
 }
 
 .text-list-Items {
-  @apply px-2 py-1  border-2 text-gray-400 cursor-pointer hover:text-white  rounded-sm border-gray-900 transition-colors duration-700;
+  @apply px-2 py-1  border-2 dark:text-gray-400 text-gray-800 cursor-pointer dark:hover:text-white rounded-sm border-gray-900 transition-colors duration-700;
 }

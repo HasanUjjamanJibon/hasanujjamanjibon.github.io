@@ -5,9 +5,9 @@ import { BiLink } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <div id="projects" className="my-16 py-20">
+    <div id="projects" className=" py-20 dark:text-white text-gray-800">
       <div className="text-center mb-12">
-        <h2 className="uppercase min-w-fit mx-auto inline-block border-b-2 text-2xl border-white  text-gradient font-semibold px-4">
+        <h2 className="uppercase min-w-fit mx-auto inline-block border-b-2 text-2xl dark:border-white border-gray-800   text-gradient font-semibold px-4">
           Projects
         </h2>
       </div>
@@ -17,7 +17,7 @@ const Projects = () => {
           <div className="h-48  w-full overflow-hidden ">
             <img
               src={chocolate}
-              className=" w-full transition-transform ease-in-out duration-500 hover:scale-110"
+              className="w-full transition-transform ease-in-out duration-500 hover:scale-110"
               alt="website_thumbnail"
             />
           </div>

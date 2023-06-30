@@ -4,9 +4,9 @@ import myImg from "/images/image.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="my-16 py-20 ">
+    <div id="about" className="my-2 py-20">
       <div className="text-center mb-12">
-        <h2 className="uppercase min-w-fit mx-auto inline-block border-b-2 text-2xl border-white  text-gradient font-semibold px-4">
+        <h2 className="uppercase min-w-fit mx-auto inline-block border-b-2 text-2xl dark:border-white border-gray-800  text-gradient font-semibold px-4">
           About me
         </h2>
       </div>
@@ -14,19 +14,19 @@ const About = () => {
         <div className="w-full h-96 text-center ">
           <img
             src={myImg}
-            className="rounded-full w-auto inline-block h-full"
+            className="rounded-full w-auto border-4 dark:border-gray-200 border-gray-800 inline-block h-full"
             alt=""
           />
         </div>
         <div className="text-center lg:text-left">
-          <p className="my-3 text-gray-400">
+          <p className="my-3 dark:text-gray-400 text-gray-800">
             Front-end web developer proficient in HTML, CSS, and JavaScript.
             Passionate about user-centric design, clean code, and creating
             seamless web experiences. Continuously learning and exploring new
             technologies to enhance development efficiency and produce
             exceptional results.
           </p>
-          <h2 className="uppercase inline-block border-b-2 text-md border-white  text-gradient font-semibold px-2 lg:px-0 lg:pe-4">
+          <h2 className="uppercase inline-block border-b-2 text-md dark:border-white border-gray-800   text-gradient font-semibold px-2 lg:px-0 lg:pe-4">
             My Skills
           </h2>
           <div className="uppercase text-sm my-3 ">
@@ -43,7 +43,7 @@ const About = () => {
               <li className="text-list-Items">expressjs</li>
             </ul>
           </div>
-          <h2 className="uppercase inline-block border-b-2 text-md border-white  text-gradient font-semibold px-2 lg:px-0 lg:pe-4">
+          <h2 className="uppercase inline-block border-b-2 text-md dark:border-white border-gray-800   text-gradient font-semibold px-2 lg:px-0 lg:pe-4">
             tools
           </h2>
           <div className="uppercase text-sm my-3 ">

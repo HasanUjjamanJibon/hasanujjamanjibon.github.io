@@ -1,19 +1,20 @@
-@import url("https://fonts.cdnfonts.com/css/thrapston");
+@import url("https://fonts.cdnfonts.com/css/midnight-4");
+@import url("https://fonts.cdnfonts.com/css/lato-tr");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "Lato TR", sans-serif;
 }
 
 .hand-font {
-  font-family: "Thrapston", sans-serif;
+  font-family: "Midnight", sans-serif;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent   bg-gradient-to-r from-rose-600 to-purple-600;
+  @apply bg-clip-text text-transparent   bg-gradient-to-r from-indigo-500 to-red-600;
 }
 
 .text-list-Items {

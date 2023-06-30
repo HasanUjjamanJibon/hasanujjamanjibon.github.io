@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-fit z-50 shadow-lg dark:bg-gray-950 bg-gray-200  max-w-7xl mx-auto flex sticky top-0   items-center md:px-8">
+    <div className="h-fit z-50 shadow-lg dark:bg-gray-950 bg-gray-200  flex sticky top-0   items-center md:px-8">
       <div className="block w-full">
         <div className="px-4 lg:px-0  py-2  font-medium uppercase text-base flex justify-between items-center overflow-hidden">
           <span
@@ -30,7 +30,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={200}
-            className="text-4xl capitalize  hand-font lg:text-5xl cursor-pointer dark:text-white text-gray-800"
+            className="text-2xl capitalize  hand-font lg:text-4xl cursor-pointer dark:text-white text-gray-800"
           >
             hasan
           </span>
@@ -61,7 +61,7 @@ const Navbar = () => {
 
             <a
               href="https://drive.google.com/uc?export=download&id=1ZDpIA6oJTexp6SLZJplFraCmR7dKgX9u"
-              className="hidden text-sm hover:bg-rose-950  px-3 py-2 uppercase dark:border-white dark:text-white text-black hover:text-white  border-black border-2 hover:font-semibold  transition-colors duration-500  rounded-md lg:flex items-center gap-2"
+              className="hidden text-sm hover:bg-rose-800  px-3 py-2 uppercase dark:border-white dark:text-white text-black hover:text-white  border-black border-2 hover:font-semibold  transition-colors duration-500  rounded-md lg:flex items-center gap-2"
               download
             >
               Resume

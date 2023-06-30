@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FiDownloadCloud, FiMail } from "react-icons/fi";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 const Banner = () => {
   return (
@@ -22,10 +23,10 @@ const Banner = () => {
               <TypeAnimation
                 className="capitalize font-semibold inline-block  dark:text-gray-200 text-gray-800"
                 sequence={[
-                  "ReactJS developer", // Types 'One'
-                  2000, // Waits 1s
+                  "Front End developer", // Types 'One'
+                  1000, // Waits 1s
                   "MERN Stack developer", // Deletes 'One' and types 'Two'
-                  2000, // Waits 2s
+                  1000, // Waits 2s
                 ]}
                 wrapper="span"
                 cursor={false}
@@ -41,24 +42,28 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex justify-center  dark:text-white text-gray-800 w-full mt-5 space-x-9 ">
-            <a
-              href="https://drive.google.com/uc?export=download&id=1ZDpIA6oJTexp6SLZJplFraCmR7dKgX9u"
-              className=" text-sm hover:bg-rose-950  px-3 py-2 uppercase dark:border-white  border-2 hover:text-gray-200 hover:font-semibold  transition-colors duration-500 rounded-md flex items-center gap-2 border-gray-800"
-              download
-            >
-              Resume
-              <FiDownloadCloud />
-            </a>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={1000}
-              className="text-sm px-3 py-1 lg:px-5 lg:py-2 hover:bg-rose-950 uppercase hover:text-gray-200 dark:border-white border-2 font-medium  transition-colors duration-500  rounded-md flex items-center gap-2 cursor-pointer border-gray-800"
-            >
-              Contact <FiMail />
-            </Link>
+            <Fade left >
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZDpIA6oJTexp6SLZJplFraCmR7dKgX9u"
+                className=" text-sm hover:bg-rose-800  px-3 py-2 uppercase dark:border-white  border-2 hover:text-gray-200 hover:font-semibold  transition-colors duration-500 rounded-md flex items-center gap-2 border-gray-800"
+                download
+              >
+                Resume
+                <FiDownloadCloud />
+              </a>
+            </Fade>
+            <Fade right cascade>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                className=" text-sm cursor-pointer hover:bg-rose-800  px-3 py-2 uppercase dark:border-white  border-2 hover:text-gray-200 hover:font-semibold  transition-colors duration-500 rounded-md flex items-center gap-2 border-gray-800"
+              >
+                Contact <FiMail />
+              </Link>
+            </Fade>
           </div>
         </div>
       </div>

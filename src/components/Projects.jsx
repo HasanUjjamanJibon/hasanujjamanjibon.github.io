@@ -1,6 +1,4 @@
 import React from "react";
-import toy from "/images/Projects/toy.png";
-import chocolate from "/images/Projects/chocolate.png";
 import { BiLink } from "react-icons/bi";
 
 const Projects = () => {
@@ -16,8 +14,8 @@ const Projects = () => {
         <div className="w-full shadow-xl h-fit py-5 space-y-4 px-8">
           <div className="h-48  w-full overflow-hidden ">
             <img
-              src={chocolate}
-              className="w-full transition-transform ease-in-out duration-500 hover:scale-110"
+              src="https://i.postimg.cc/288TM9Lp/chocolate.png"
+              className="w-full transition-transform ease-in-out duration-500 rounded hover:scale-110"
               alt="website_thumbnail"
             />
           </div>
@@ -56,8 +54,8 @@ const Projects = () => {
         <div className="w-full shadow-xl h-fit py-5 space-y-4 px-8">
           <div className="h-48  w-full overflow-hidden ">
             <img
-              src={toy}
-              className=" w-full translate-y-0  hover:-translate-y-full duration-[3s] ease-in transition-transform"
+              src="https://i.postimg.cc/hPzQXVHz/toy.png"
+              className=" w-full translate-y-0 rounded hover:-translate-y-full duration-[3s] ease-in transition-transform"
               alt="website_thumbnail"
             />
           </div>
@@ -101,7 +99,7 @@ const Projects = () => {
           <div className="h-48  w-full overflow-hidden ">
             <img
               src="https://i.postimg.cc/kXhbPTjq/Food-Mania-1.png"
-              className=" w-full translate-y-0  hover:-translate-y-full duration-[3s] ease-in-out transition-transform"
+              className=" w-full translate-y-0 rounded  hover:-translate-y-full duration-[3s] ease-in-out transition-transform"
               alt="website_thumbnail"
             />
           </div>

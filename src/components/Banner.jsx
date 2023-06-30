@@ -2,23 +2,10 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FiDownloadCloud, FiMail } from "react-icons/fi";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { onButtonClick } from "../download";
+
 
 const Banner = () => {
-  // const onButtonClick = () => {
-  //   // using Java Script method to get PDF file
-  //   fetch("hasanujjamanjibon.pdf").then((response) => {
-  //     response.blob().then((blob) => {
-  //       // Creating new object of PDF file
-  //       const fileURL = window.URL.createObjectURL(blob);
-  //       // Setting various property values
-  //       let alink = document.createElement("a");
-  //       alink.href = fileURL;
-  //       alink.download = "resume of hasanujjaman.pdf";
-  //       alink.click();
-  //     });
-  //   });
-  // };
+
   return (
     <div
       id="banner"
@@ -56,12 +43,14 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex justify-center  w-full mt-5 space-x-9 ">
-            <button
-              onClick={onButtonClick}
-              className="text-sm px-3 py-1 lg:px-5 lg:py-2 hover:bg-rose-950 uppercase border-white border-2 font-medium  transition-colors duration-500  rounded-md flex items-center gap-2 cursor-pointer "
+            <a
+              href="https://drive.google.com/uc?export=download&id=1ZDpIA6oJTexp6SLZJplFraCmR7dKgX9u"
+              className="hidden text-sm hover:bg-rose-950  px-3 py-2 uppercase border-white border-2 hover:font-semibold  transition-colors duration-500  rounded-md lg:flex items-center gap-2"
+              download
             >
-              resume <FiDownloadCloud />
-            </button>
+              Resume
+              <FiDownloadCloud />
+            </a>
             <Link
               to="contact"
               spy={true}

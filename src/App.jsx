@@ -11,10 +11,10 @@ const App = () => {
   const [isShow, setShow] = useState(false);
   return (
     <StateContext.Provider value={{ isShow, setShow }}>
-      <div className=" bg-gray-950 dark:text-gray-200 text-gray-200 min-h-fit ">
+      <div className=" bg-gray-950 dark:text-gray-200 text-gray-200 min-h-fit px-2">
         <Navbar></Navbar>
         <Banner></Banner>
-        <div className="max-w-7xl bg-gray-950 mx-auto px-3 lg:px-0 tracking-wide h-fit">
+        <div className="max-w-6xl bg-gray-950 mx-auto px-3 lg:px-0 tracking-wide h-fit">
           <About></About>
           <Projects></Projects>
           <Contact></Contact>

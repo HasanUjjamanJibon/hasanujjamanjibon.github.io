@@ -1,12 +1,11 @@
 import React from "react";
-import foodmania from "/images/Projects/FoodMania.png";
 import toy from "/images/Projects/toy.png";
 import chocolate from "/images/Projects/chocolate.png";
 import { BiLink } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <div id="projects" className="my-16 py-20 ">
+    <div id="projects" className="my-16 py-20">
       <div className="text-center mb-12">
         <h2 className="uppercase min-w-fit mx-auto inline-block border-b-2 text-2xl border-white  text-gradient font-semibold px-4">
           Projects
@@ -25,7 +24,7 @@ const Projects = () => {
           <div className="space-y-2">
             <h2 className="border-b-2 inline-block"> Chocolate Management</h2>
             <p>Technology: React JS, Tailwind CSS, Express JS, MongoDB</p>
-            <div className="flex justify-around items-center">
+            <div className="flex justify-between items-center">
               <a
                 target="_blank"
                 className="flex items-center gap-1"
@@ -68,7 +67,7 @@ const Projects = () => {
               Technology: React JS, Tailwind CSS, Firebase Authentication &
               Hosting, Express JS, MongoDB
             </p>
-            <div className="flex justify-around items-center">
+            <div className="flex justify-between items-center">
               <a
                 target="_blank"
                 className="flex items-center gap-1"
@@ -102,7 +101,7 @@ const Projects = () => {
           <div className="h-48  w-full overflow-hidden ">
             <img
               src="https://i.postimg.cc/kXhbPTjq/Food-Mania-1.png"
-              className=" w-full translate-y-0  hover:-translate-y-full duration-[3s] ease-in transition-transform"
+              className=" w-full translate-y-0  hover:-translate-y-full duration-[3s] ease-in-out transition-transform"
               alt="website_thumbnail"
             />
           </div>
@@ -112,7 +111,7 @@ const Projects = () => {
               Technology: React JS, Tailwind CSS, Firebase Authentication,
               Express JS
             </p>
-            <div className="flex justify-around items-center">
+            <div className="flex justify-between items-center">
               <a
                 target="_blank"
                 className="flex items-center gap-1"

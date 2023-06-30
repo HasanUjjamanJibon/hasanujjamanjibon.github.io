@@ -10,7 +10,7 @@ const NavItems = () => {
         onClick={() => setShow(!isShow)}
         className="transition-colors active:text-white duration-500 hover:text-white list-none cursor-pointer"
       >
-        <Link to="banner" spy={true} smooth={true} offset={-50} duration={1000}>
+        <Link to="banner" spy={true} smooth={true} offset={-100} duration={1000}>
           Home
         </Link>
       </li>
@@ -18,7 +18,7 @@ const NavItems = () => {
         onClick={() => setShow(!isShow)}
         className="transition-colors active:text-white duration-500 hover:text-white list-none cursor-pointer"
       >
-        <Link to="about" spy={true} smooth={true} offset={-50} duration={1000}>
+        <Link to="about" spy={true} smooth={true} offset={-10} duration={1000}>
           about
         </Link>
       </li>
@@ -30,26 +30,13 @@ const NavItems = () => {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-10}
           duration={1000}
         >
           projects
         </Link>
       </li>
-      {/* <li
-        onClick={() => setShow(!isShow)}
-        className="transition-colors active:text-white duration-500 hover:text-white list-none cursor-pointer"
-      >
-        <Link
-          to="services"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={1000}
-        >
-          Services
-        </Link>
-      </li> */}
+
       <li
         onClick={() => setShow(!isShow)}
         className="transition-colors active:text-white duration-500 hover:text-white list-none cursor-pointer"
@@ -58,7 +45,7 @@ const NavItems = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-70}
           duration={1000}
         >
           contact

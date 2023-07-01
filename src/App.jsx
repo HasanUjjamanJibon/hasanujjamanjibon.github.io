@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 export const StateContext = createContext();
 
+
 const App = () => {
   const [isShow, setShow] = useState(false);
   return (

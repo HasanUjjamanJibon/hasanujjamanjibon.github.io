@@ -43,7 +43,7 @@ const Contact = () => {
                 placeholder="Description"
                 className="w-full py-3 px-6 h-40 bg-transparent border-2 rounded-md dark:text-gray-200 text-gray-800 font-semibold  focus:outline-0 placeholder:font-semibold placeholder:text-sm placeholder:text-gray-400 dark:border-white border-gray-800"
               />
-              <button className="w-full my-2 py-3 px-6 rounded-md bg-sky-500 hover:bg-rose-800 transition-all text-gray-200 font-semibold   focus:outline-0 ">
+              <button className="w-full my-2 py-3 px-6 rounded-md bg-sky-500 hover:bg-sky-800 transition-color duration-300 easy-in-out text-gray-200 font-semibold   focus:outline-0 ">
                 Send Message
               </button>
             </form>
@@ -51,7 +51,6 @@ const Contact = () => {
         </Fade>
         <Fade right cascade>
           <Lottie animationData={Email} />
-          {/* <img src={email} className="min-w-[380px] hidden lg:block" /> */}
         </Fade>
       </div>
     </div>

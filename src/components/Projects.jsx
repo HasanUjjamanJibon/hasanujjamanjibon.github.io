@@ -15,7 +15,7 @@ const Projects = () => {
         {/* project 03 */}
 
         <Fade bottom cascade>
-          <div className="w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
+          <div className="w-full shadow-xl dark:hover:shadow-gray-700 hover:shadow-gray-500 shadow-gray-400 transition-shadow duration-300 ease-in-out dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
             <div className="h-48  w-full overflow-hidden ">
               <img
                 src="https://i.postimg.cc/288TM9Lp/chocolate.png"
@@ -60,7 +60,7 @@ const Projects = () => {
         </Fade>
         {/* project 01 */}
         <Fade bottom cascade>
-          <div className="w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
+          <div className="w-full shadow-xl dark:hover:shadow-gray-700 hover:shadow-gray-500 shadow-gray-400 transition-shadow duration-300 ease-in-out dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
             <div className="h-48  w-full overflow-hidden ">
               <img
                 src="https://i.postimg.cc/hPzQXVHz/toy.png"
@@ -108,7 +108,7 @@ const Projects = () => {
 
         {/* project 02 */}
         <Fade bottom cascade>
-          <div className="w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
+          <div className="w-full shadow-xl dark:hover:shadow-gray-700 hover:shadow-gray-500 shadow-gray-400 transition-shadow duration-300 ease-in-out dark:shadow-gray-900 h-fit py-5 space-y-4 px-8">
             <div className="h-48  w-full overflow-hidden ">
               <img
                 src="https://i.postimg.cc/kXhbPTjq/Food-Mania-1.png"

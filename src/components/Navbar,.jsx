@@ -7,22 +7,22 @@ import { StateContext } from "../App";
 
 const Navbar = () => {
   const { isShow, setShow } = useContext(StateContext);
-  const [isLight, setLight] = useState(false);
+  const [isDark, setDark] = useState(false);
 
   useEffect(() => {
-    if (isLight) {
+    if (isDark) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [isLight]);
+  }, [isDark]);
 
   const navItemsShow = () => {
     setShow(!isShow);
   };
 
   return (
-    <div className="h-fit z-50 shadow-lg dark:bg-gray-950 bg-gray-200  flex sticky top-0   items-center md:px-8">
+    <div className="h-16 z-50 shadow-lg dark:bg-gray-950 bg-gray-200  flex sticky top-0   items-center md:px-8">
       <div className="block w-full">
         <div className="px-4 lg:px-0  py-2  font-medium uppercase text-base flex justify-between items-center overflow-hidden">
           <span
@@ -30,7 +30,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={200}
-            className="text-2xl capitalize  hand-font lg:text-4xl cursor-pointer dark:text-white text-gray-800"
+            className="text-2xl capitalize  hand-font lg:text-4xl cursor-pointer dark:text-white text-gray-800 cursor-pointer"
           >
             hasan
           </span>
@@ -42,17 +42,17 @@ const Navbar = () => {
           </nav>
           <div className="flex gap-4 items-center ">
             <div className="hidden lg:block dark:text-white text-black text-2xl">
-              {isLight ? (
+              {isDark ? (
                 <FiMoon
                   className="inline-block cursor-pointer"
-                  onClick={() => setLight(!isLight)}
+                  onClick={() => setDark(!isDark)}
                 >
                   {/* moon icon */}
                 </FiMoon>
               ) : (
                 <FiSun
                   className="flex  cursor-pointer "
-                  onClick={() => setLight(!isLight)}
+                  onClick={() => setDark(!isDark)}
                 >
                   {/* sun icon */}
                 </FiSun>
@@ -72,17 +72,17 @@ const Navbar = () => {
           <div className="block lg:hidden">
             <div className=" flex items-center gap-5 h-full ">
               <div className="flex dark:text-white text-black text-xl ">
-                {isLight ? (
+                {isDark ? (
                   <FiMoon
                     className="inline-block cursor-pointer stroke-2	"
-                    onClick={() => setLight(!isLight)}
+                    onClick={() => setDark(!isDark)}
                   >
                     {/* moon icon */}
                   </FiMoon>
                 ) : (
                   <FiSun
                     className="flex  cursor-pointer"
-                    onClick={() => setLight(!isLight)}
+                    onClick={() => setDark(!isDark)}
                   >
                     {/* sun icon */}
                   </FiSun>

@@ -36,7 +36,7 @@ const Navbar = () => {
           </span>
 
           <nav className="hidden lg:block">
-            <ul className="flex justify-center items-center gap-4 text-sm dark:text-gray-400  text-gray-600">
+            <ul className="flex justify-center items-center gap-4 text-sm dark:text-gray-400  text-gray-600 font-medium">
               <NavItems></NavItems>
             </ul>
           </nav>
